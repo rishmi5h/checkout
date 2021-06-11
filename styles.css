@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+:root {
+    --primary-color: #828282;
+    --secondary-color: #4F4F4F;
+    --gray: #F2F2F2;
+    --orange: #F2994A;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    
+}
+
+
+.gridd{
+    display: flex;
+    max-width: 960px;
+    margin:0 auto;
+    
+}
+.gridd .form{
+    padding: 1rem;
+    margin:2rem;
+}
+
+.gridd .total{
+    width: 75%;
+    margin: 3rem;
+    max-height: 550px;
+    
+}
+
+input,
+label {
+    display: block;
+}
+
+label {
+    color: var(--secondary-color);
+    font-size: x-small;
+    padding-bottom: 0.3rem;
+    padding-left: 0.2rem;
+}
+
+section {
+    margin-top: 3.5rem;
+}
+
+.input-main {
+    margin-bottom: 1rem;
+}
+
+.input-box {
+    display: flex;
+    border: 1px solid var(--primary-color);
+    border-radius: 12px;
+    padding: 1rem;
+}
+
+.material-icons {
+    color: var(--primary-color);
+}
+
+.input-box .input {
+    border-style: none;
+    margin-left: 1rem;
+    width: 75%;
+}
+
+.sub {
+    display: flex;
+}
+
+.sub .input-main {
+    width: 50%;
+
+}
+
+.sub .select {
+    padding-right: 1rem;
+}
+
+.checkbox {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.checkbox input {
+    border: 1px solid #828282;
+    box-sizing: border-box;
+    border-radius: 4px;
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+.checkbox label {
+    color: var(--secondary-color);
+    padding-top: 0.2rem;
+    font-size: small;
+}
+
+.button {
+    width: 166px;
+    height: 54px;
+    background: var(--orange);
+    border-radius: 12px;
+    color: white;
+    float: right;
+    border-style: none;
+    margin-top: 2rem;
+}
+
+.total {
+    background: var(--gray);
+    border-radius: 12px;
+    width: 100%;
+    padding: 2rem;
+
+}
+
+.total .products {
+    display: flex;
+    padding: 1rem;
+    height: 30%;
+    /* width: 80%; */
+    justify-content: space-between;
+}
+
+.products .img{
+    width: 90%;
+    height: 100%;
+}
+.products .images {
+    width: 100%;
+    height: 100%;
+    border-radius: 13px;
+
+
+}
+
+.products .prod-desc {
+    padding-top: 0;
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.prod-desc p {
+    margin-top: 0;
+
+}
+
+.prod-desc .prices {
+    display: flex;
+}
+
+.prices .sell-price {
+    margin-right: 1rem;
+    color: orange;
+}
+
+.prices .price {
+    font-size: small;
+    text-decoration-line: line-through;
+}
+
+.prod-desc .qty {
+    border: 1px solid var(--primary-color);
+    padding: 1rem;
+    border-radius: 12px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.qty input {
+    border-style: none;
+    background-color: var(--gray);
+    background: #E0E0E0;
+    border-radius: 4px;
+    width: 1.5rem;
+}
+
+.shipping-total{
+    margin-top: 5rem;
+}
+hr{
+    border: 1px solid #BDBDBD;
+}
+.shipping-total .st{
+    display: flex;
+    justify-content: space-between;
+}
