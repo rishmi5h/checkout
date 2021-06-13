@@ -1,27 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1,
-  maximum-scale=5"
-    />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="total.css" />
-    <title>Checkout</title>
-  </head>
 
-  <body>
-    <div class="heading"><h1>Checkout</h1></div>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1,
+  maximum-scale=5" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="total.css" />
+  <title>Checkout</title>
+</head>
 
-    <div class="gridd">
-      <!-- <div class="form">
-      <form>
+<body>
+  <div class="heading">
+    <h1>Checkout</h1>
+  </div>
+
+  <div class="gridd">
+    <div class="form">
+      <form action="" method="get">
         <section>
           <h3>Contact infomation</h3>
           <div class="input-main">
@@ -348,61 +345,70 @@
         </section>
 
       </form>
-    </div> -->
-      <div class="total">
-        <div class="products">
-          <div class="img">
-            <img src="./images/photo1.png" alt="" class="images" />
+    </div>
+    <div class="total">
+      <div class="products">
+        <div class="img">
+          <img src="./images/photo1.png" alt="" class="images" />
+        </div>
+        <div class="prod-desc">
+          <div class="name-price">
+            <p>Vintage Backbag</p>
+            <div class="prices">
+              <p class="sell-price">$54.99</p>
+              <p class="price">$94.99</p>
+            </div>
           </div>
-          <div class="prod-desc">
-            <div class="name-price">
-              <p>Vintage Backbag</p>
-              <div class="prices">
-                <p class="sell-price">$54.99</p>
-                <p class="price">$94.99</p>
-              </div>
-            </div>
-            <div class="qty">
-              <input type="button" value="-" field="quantity" />
-              1
-              <input type="button" value="+" field="quantity" />
-            </div>
+          <div class="qty">
+            
+            <button onclick="increment()">-</button>
+            1
+            <button onclick="decrement()">+</button>
           </div>
         </div>
-        <!-- <div class="products">
-          <div class="img">
-            <img src="./images/photo2.png" alt="" class="images" />
-          </div>
-          <div class="prod-desc">
-            <div class="name-price">
-              <p>Levi Shoes</p>
-              <div class="prices">
-                <p class="sell-price">$74.99</p>
-                <p class="price">$124.99</p>
-              </div>
-            </div>
-            <div class="qty">
-              <input type="button" value="-" field="quantity" />
-              1
-              <input type="button" value="+" field="quantity" />
+      </div>
+      <div class="products">
+        <div class="img">
+          <img src="./images/photo2.png" alt="" class="images" />
+        </div>
+        <div class="prod-desc">
+          <div class="name-price">
+            <p>Levi Shoes</p>
+            <div class="prices">
+              <p class="sell-price">$74.99</p>
+              <p class="price">$124.99</p>
             </div>
           </div>
-        </div> -->
-
-        <!-- <div class="shipping-total">
-          <hr />
-          <div class="st">
-            <p>Shipping</p>
-            <p>$19</p>
+          <div class="qty">
+            <!-- <input id=demoInput type=text min=1 max=110> -->
+            <button onclick="increment()">-</button>
+            1
+            <button onclick="decrement()">+</button>
           </div>
+        </div>
+      </div>
 
-          <hr />
-          <div class="st">
-            <p>Total</p>
-            <p>$148.98</p>
-          </div>
-        </div> -->
+      <div class="shipping-total">
+        <hr />
+        <div class="st">
+          <p>Shipping</p>
+          <p>$19</p>
+        </div>
+
+        <hr />
+        <div class="st">
+          <p>Total</p>
+          <p>$148.98</p>
+        </div>
       </div>
     </div>
-  </body>
+  </div>
+
+  <footer>
+    created by
+    <a href="https://github.com/rishimish" target="_blank">@rishimish</a>-
+    devChallenges.io
+  </footer>
+</body>
+
 </html>
