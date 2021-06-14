@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+:root {
+    --primary-color: #828282;
+    --secondary-color: #4F4F4F;
+    --gray: #F2F2F2;
+    --orange: #F2994A;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    /* outline: 1px solid red; */
+}
+
+.total {
+    background: var(--gray);
+    border-radius: 12px;
+    padding: 1rem;
+    border: none;
+}
+
+.total .products {
+    display: flex;
+    padding-bottom: 1rem;
+    justify-content: flex-start;
+    margin-right: 3rem;
+}
+
+.products .img {
+    width: 90%;
+    height: 100%;
+    max-width: 135px;
+    max-height: 135px;
+    min-width: 120px;
+    min-height: 120px;
+}
+
+.products .images {
+    width: 100%;
+    height: 100%;
+    border-radius: 13px;
+
+
+}
+
+.products .prod-desc {
+
+    padding-top: 0;
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.prod-desc p {
+    margin-top: 0;
+
+}
+
+.prod-desc .prices {
+    display: flex;
+}
+
+.prices .sell-price {
+    margin-right: 1rem;
+    color: orange;
+}
+
+.prices .price {
+    font-size: small;
+    text-decoration-line: line-through;
+}
+
+.prod-desc .qty {
+    border: 1px solid var(--primary-color);
+    padding: 1rem;
+    border-radius: 12px;
+    display: flex;
+    width: 134.25px;
+    height: 52px;
+    justify-content: space-between;
+}
+
+.qty button {
+    border-style: none;
+    background-color: var(--gray);
+    background: #E0E0E0;
+    border-radius: 4px;
+    width: 1.5rem;
+}
+
+.shipping-total {
+    margin-top: 5rem;
+}
+
+hr {
+    border: 1px solid #BDBDBD;
+}
+
+.shipping-total .st {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width:600px){
+    .prod-desc .qty {
+        
+        width: 122.8px;
+height: 49.86px;
+        
+    }
+    .total .products {
+        display: flex;
+        padding-bottom: 1rem;
+        justify-content: flex-start;
+        margin-right: 1rem;
+    }
+    
+}
