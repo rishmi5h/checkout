@@ -1,18 +1,25 @@
-var negBtn = document.querySelector("#neg");
-var posBtn = document.querySelector("#pos");
-var input = document.querySelector("#qty");
+"use strict";
 
-negBtn.addEventListener("click", () => {
-  input.innerHTML = input.value - 1;
-});
+const e = React.createElement;
 
-negBtn.addEventListener("click", () => {
-  input.innerHTML = input.value + 1;
-});
+class LikeButton extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { liked: false };
+  }
 
-function increment() {
-  document.getElementById("demoInput").stepUp();
+  render() {
+    if (this.state.liked) {
+      return "You liked this.";
+    }
+
+    return e(
+      "button",
+      { onClick: () => this.setState({ liked: true }) },
+      "Like"
+    );
+  }
 }
-function decrement() {
-  document.getElementById("demoInput").stepDown();
-}
+
+const domContainer = document.querySelector("#like_button_container");
+ReactDOM.render(e(LikeButton), domContainer);
